@@ -25,7 +25,7 @@ class Game
 
     public function updateGameScore($post)
   {
-    $this->db->query("UPDATE `Spel` SET `Aantalpunten` = :aantalpunten WHERE `Id` = :id;");
+    $this->db->query("UPDATE `Spel` SET `Aantalpunten` = :aantalpunten WHERE Spel.Id = :id;");
     $this->db->bind(':aantalpunten', $post['Aantalpunten'], PDO::PARAM_INT);
 
     return $this->db->execute();
