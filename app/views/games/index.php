@@ -26,5 +26,5 @@ td, th {
     <?=$data['game']?>
   </tbody>
 </table>
-<a href="<?=URLROOT;?>/homepages/index">terug</a>
+<a href="<?=URLROOT;?>/homepages/index">home</a>
 

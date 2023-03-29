@@ -23,4 +23,4 @@
 
 </form>
 
-<a href="<?= URLROOT;?>/homepages/index">home</a>
+<a href="<?= URLROOT;?>/games/index">terug</a>
