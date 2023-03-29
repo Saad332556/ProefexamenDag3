@@ -5,6 +5,7 @@
     <tbody>
       <tr>
         <td>
+          Aantalpunten :
           <input type="text" name="aantalpunten" id="aantalpunten" value="<?= $data["row"]->Aantalpunten; ?>">
         </td>
       </tr>

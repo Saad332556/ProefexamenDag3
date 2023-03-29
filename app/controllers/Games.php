@@ -54,14 +54,14 @@
         header('Location: ' . URLROOT . '/games/index');
       } catch (PDOException $e) {
         // Show the error message
-        echo 'Er is iets misgegaan tijdens het bewerken van een land (PDOException)';
+        echo 'Er is iets misgegaan tijdens het bewerken van de aantalpunten (PDOException)';
         header('Refresh: 2; url=' . URLROOT . '/games/index');
       }
     } else {
       $row = $this->gameModel->getSingleGame($id);
 
       $data = [
-        'title' => '<h1>Update landenoverzicht</h1>',
+        'title' => '<h2>Detail uitslag</h2>',
         'row' => $row
       ];
 
